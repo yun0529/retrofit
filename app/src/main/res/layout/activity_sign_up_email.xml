@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".src.main.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_login"
+        android:alpha="0.8"/>
+
+    <TextView
+        android:id="@+id/su_email_tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일"
+        android:textColor="@color/white"
+        android:alpha="0.7"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/su_email_et_email"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/su_email_et_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/su_email_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:alpha="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/su_email_et_name"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/su_email_et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/su_email_et_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/su_email_et_email" />
+
+    <TextView
+        android:id="@+id/su_email_tv_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 (영문+숫자+특수문자 8자 이상)"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:alpha="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/su_email_et_pw"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/su_email_et_pw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/su_email_et_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/su_email_et_email"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/su_email_tv_pw_conf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 확인"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:alpha="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/su_email_et_pw_conf"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/su_email_et_pw_conf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/su_email_et_pw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/su_email_et_email"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/su_email_tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:alpha="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/su_email_et_phone"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/su_email_et_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/su_email_et_pw_conf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/su_email_et_email"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/su_email_tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추천인코드 (선택사항)"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:alpha="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/su_email_et_code"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/su_email_et_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/su_email_et_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/su_email_et_email"
+        android:layout_marginStart="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/su_email_ll_agree_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/su_email_et_code"
+        app:layout_constraintStart_toStartOf="@id/su_email_et_code"
+        app:layout_constraintEnd_toEndOf="@id/su_email_et_code"
+        android:background="@drawable/sing_up_email_layout_str">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <CheckBox
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:button="@null"
+                android:background="@drawable/sign_up_checkbox_custom"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체 동의"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/su_email_bt_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="동의하고 회원가입"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/ripple_login_bt_other_method_shape"
+        android:theme="@style/Theme.AppCompat.WhiteRipple"
+        app:layout_constraintStart_toStartOf="@id/su_email_ll_agree_list"
+        app:layout_constraintEnd_toEndOf="@id/su_email_ll_agree_list"
+        app:layout_constraintTop_toBottomOf="@id/su_email_ll_agree_list"
+        android:layout_marginTop="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
